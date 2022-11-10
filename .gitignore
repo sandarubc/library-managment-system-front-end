@@ -1,2 +1,5 @@
 .vscode/
 css/
+pages/manage-books.html
+js/manage-books.js
+scss/manage-books.scss

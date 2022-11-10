@@ -16,21 +16,21 @@
         position: relative;
         padding: 10px;
         overflow: hidden;
-        
-        
         background-color:#3919FA;
+
+
         &:nth-child(odd):after{
-            content:"";
+    
             display: block;
             border-radius: 10%;
             position: absolute;
             visibility: hidden;
+            color: rgb(212, 91, 30);
             top: -100%;
             left: 0;
             height: 100%;
             width: 100%;
             padding: 10px;
-            background-color: #3a3a38;
             transition-property: top;
             transition-duration: 500ms;
 
@@ -48,27 +48,27 @@
             height: 100%;
             width: 100%;
             padding: 10px;
-            background-color: #3a3a38;
             transition-property: top;
             transition-duration: 500ms;
 
             
         }
+        &:nth-child(1)::after{
+            content: "Click to add, update, search or delete members";
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        &:nth-child(2)::after{
+            content: "Click to add, update, search or delete books";
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
 
-        /* &:nth-child(odd)::after{
-            content:"abc";
-            display: none;
-            border-radius: 10%;
-            position: absolute;
-            top: -100%;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            padding: 10px;
-            background-color: #3a3a38;
-
-            
-        } */
+       
 
 
 
@@ -77,7 +77,6 @@
             background-color:#FAE319;
             color: black;
             &::after{
-                content:"";
                 display: block;
                 border-radius: 10%;
                 position: absolute;
@@ -89,6 +88,7 @@
                 padding: 10px;
                 background-color: #3a3a38;
                 pointer-events: none;
+                color: aliceblue;
 
                 
             }
